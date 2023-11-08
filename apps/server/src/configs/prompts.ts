@@ -16,7 +16,7 @@ export const addressPrompts = async () => {
       type: 'text',
       name: 'lon_lat_address',
       message: `位置参数预设#${i + 1}（经纬度/地址）`,
-      initial: '113.516288,34.817038/河南省郑州市万科城大学软件楼',
+      initial: '126.62694,45.722013/哈尔滨理工大学',
     }, PromptsOptions);
     lon_lat_address = lon_lat_address.match(/([\d.]*),([\d.]*)\/(\S*)/);
     console.log(`#${i + 1}  经度: ${lon_lat_address?.[1]}  纬度: ${lon_lat_address?.[2]}  地址: ${lon_lat_address?.[3]}`);
