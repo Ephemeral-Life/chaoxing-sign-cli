@@ -52,7 +52,6 @@ export const userLogin = async (uname: string, password: string): Promise<string
       console.log('网络异常，换个环境重试');
       return 'AuthFailed';
     }
-
     for (let i = 0; i < cookies!.length; i++) {
       c_equal = cookies![i].indexOf('=');
       c_semi = cookies![i].indexOf(';');
